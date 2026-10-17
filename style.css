@@ -1,6 +1,34 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
+}
+
+canvas {
+  display: block;
+}
+
+
+.intestazione {
+  height: 90px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: ( 24px);
+}
+
+.intestazione h1 {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+  font-size: (2em);
+
+  color: #503223;
+}
+
+#sketch-container {
+  width: 100%;
+  line-height: 0;
 }
 
 canvas {

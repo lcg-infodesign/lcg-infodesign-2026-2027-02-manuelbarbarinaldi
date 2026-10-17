@@ -11,8 +11,10 @@ function setup() {
   textAlign(CENTER, CENTER);
   textSize(16);
   text(message, width / 2, height / 2);*/
-  createCanvas(windowWidth, windowHeight);
-  background(245, 235, 215);
+let hIntestazione = 90;
+  // Crea il canvas sotto l'intestazione
+  createCanvas( windowWidth, windowHeight - hIntestazione );
+  background("white");
   angleMode(DEGREES);
 
    // Disegno glifi
@@ -60,7 +62,7 @@ function mioGlifo(x, y, lato) {
   push();
   translate(x, y);
 
-  // 3. Costruisce le tre facce ruotandole di 120 gradi
+  // 3. Costruisce il cubo ruotando le tre faccedi 120 gradi
   for (let i = 0; i < 3; i++) {
 
     push();
